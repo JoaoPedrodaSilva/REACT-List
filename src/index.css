@@ -1,0 +1,171 @@
+:root {
+  --color-primary: rgb(225, 246, 248);
+  --color-secondary: rgb(110, 157, 233);
+  --color-tertiary:rgb(21, 46, 234);
+  --color-quarternary: white;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+
+#root {
+  width: 600px;
+  height: 600px;
+  background-color: var(--color-quarternary);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 1%;
+}
+  .header {
+    margin: 1%;
+  }
+    .header .title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-top: -2%;
+    }
+    .header .underline {
+      height: 0.25rem;
+      width: 10rem;
+      background: var(--color-secondary);
+      margin: 0 auto;
+      margin-top: -2%;
+    }
+
+  .alert {
+    font-size: 1.425rem;
+    padding: 1%;
+    color: white;
+    width: 95%;
+    margin-left: 2%;
+    border-radius: 3%;
+  }
+    .alert-hidden {
+      font-size: 2.9rem;
+    }
+    .alert-red {
+      background-color: red;
+    }
+    .alert-blue {
+      background-color: rgb(105, 167, 105);
+    }
+
+  form {
+    margin: 1%;
+  }
+    form input {
+      font-size: 1.75rem;
+      padding: 0.5%;
+      width: 75%;
+      margin: 1%;
+    }
+
+    form button {
+      font-size: 2rem;
+      width: 20%;
+      padding: 0.35%;
+      border-radius: 5%;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+      color: var(--color-quarternary);
+      background-color: var(--color-secondary);
+      cursor: pointer;
+    }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84%;    
+    margin-left: 2.5%;
+    margin-bottom: 0.5%;
+    padding-left: 2%;
+    padding-right: 10%;
+    background-color: var(--color-primary);
+  }
+    .item p {
+      margin: 2%;
+    }
+    .item .button-container {
+      display: flex;
+      align-items: center;
+    }
+      .item button {
+        padding: 30%;
+        margin: 0 5%;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+        .edit {
+          font-size: 1.8rem;
+          color: var(--color-tertiary);          
+        }
+        .delete {
+          font-size: 1.8rem;
+          color: red;
+        }
+
+  .clear-all {
+    align-self: center;
+    font-size: 2rem;
+    width: 20%;
+    padding: 3%;
+    border: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+  }
+  
+
+
+@media (max-width: 1024px) {
+  #root {
+    width: 560px;
+    height: 560px;
+  }
+
+  html {
+    font-size: 7px;
+  }
+}
+@media (max-width: 768px) {
+  #root {
+    width: 420px;
+    height: 420px;
+  }
+}
+@media (max-width: 576px) {
+  #root {
+    width: 350px;
+    height: 350px;
+  }
+
+  html {
+    font-size: 6px;
+  }
+}
+@media (max-width: 425px) {
+  #root {
+    width: 240px;
+    height: 240px;
+  }
+
+  html {
+    font-size: 4px;
+  }
+}
